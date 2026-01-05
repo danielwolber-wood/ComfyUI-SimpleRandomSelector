@@ -20,7 +20,7 @@ class RandomFileSelector:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("selected_item",)
     FUNCTION = "get_random_item"
-    CATEGORY = "Utils/Random"
+    CATEGORY = "DLWW/Utils"
 
     def get_random_item(self, file_path, seed):
         # . Set the seed for reproducibility
