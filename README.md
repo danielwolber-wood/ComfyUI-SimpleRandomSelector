@@ -13,13 +13,13 @@ A custom node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that allo
 1. Navigate to your ComfyUI `custom_nodes` directory.
 2. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/ComfyUI-SimpleRandomSelector.git
+   git clone https://github.com/danielwolber-wood/ComfyUI-SimpleRandomSelector.git
    ```
 3. Restart ComfyUI.
 
 ## Usage
 
-1. Search for the node **"Random Line form File"** in the node menu (under `Utils/Random`).
+1. Search for the node **"Random Line from File"** in the node menu (under `Utils/Random`).
 2. **file_path**: Enter the path to your file. You can use absolute paths or paths relative to the ComfyUI root directory.
    - Default: `examples/colors.txt`
 3. **seed**: Set a seed for the random selection. Changing the seed will select a new item.
@@ -46,3 +46,7 @@ blue
 green
 ```
 The node will output one of "red", "blue", or "green" based on the seed.
+
+## AI Disclosure
+
+The first draft of this README was written with AI, but was manually edited and checked for correctness.
