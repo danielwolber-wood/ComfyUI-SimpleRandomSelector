@@ -27,8 +27,14 @@ class RandomFileSelector:
         # This ensures if you load an old workflow, you get the same random result
         random.seed(seed)
 
+        # Debugging info
+        print(f"DEBUG: Current working directory: {os.getcwd()}")
+        print(f"DEBUG: Input file_path: {file_path}")
+        abs_path = os.path.abspath(file_path)
+        print(f"DEBUG: Absolute path check: {abs_path}")
+
         if not os.path.exists(file_path):
-            return (f"Error: File not found at {file_path}",)
+            return (f"Error: File not found at {file_path} (Absolute: {abs_path})",)
 
         _, ext = os.path.splitext(file_path)
         ext = ext.lower()
